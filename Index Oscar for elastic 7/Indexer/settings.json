@@ -1,0 +1,41 @@
+{
+  "elastic_url": "localhost:9200",
+  "corpus_name": "oscar",
+  "sentence_meta": [],
+  "json_indent": -1,
+  "convert_quotes": true,
+  "left_quot_mark": "«",
+  "right_quot_mark": "»",
+  "sent_end_punc": "(?:[.!?;;]+(?:[)\\]}>/»]|$)|\\\\n)",
+  "sent_start": "^[A-ZÄÖÜА-ЯЁӤӦӴӞӜ0-9]",
+  "newline_ends_sent": true,
+  "abbreviations": [],
+  "sents_properties": {
+    "prev_id": {
+      "type": "integer"
+    },
+    "next_id": {
+      "type": "integer"
+    },
+    "doc_id": {
+      "type": "integer"
+    },
+    "n_words": {
+      "type": "integer"
+    },
+    "sentence": {
+      "type": "text"
+    }
+  },
+  "docs_properties": {
+    "n_sents": {
+      "type": "integer"
+    },
+    "tags": {
+      "type": "text"
+    },
+    "link": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+INFO:root:Start indexing corpus
+INFO:root:Corpus size in Bytes = 235612250
+INFO:root:../Data\ru_meta_part_1.jsonl.gz
+INFO:root:Indexing document 1000
+INFO:root:Indexing document 2000
+INFO:root:Indexing document 3000
+INFO:root:Indexing document 4000
+INFO:root:Indexing document 5000
+INFO:root:Indexing document 6000

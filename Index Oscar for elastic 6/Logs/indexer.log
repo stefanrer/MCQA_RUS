@@ -1,0 +1,4 @@
+INFO:root:default connection to Elastic Search
+INFO:root:Start indexing corpus
+INFO:root:Indexing document 1000
+INFO:root:Corpus indexed in 0:02:24.500955: 1009 documents, 45128 sentences, 768096 words
