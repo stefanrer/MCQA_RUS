@@ -1,6 +1,8 @@
 # MCQA_RUS
 Multilingual Comparative Question Answering for Russian Language
 
+Colab elastic search interface: https://colab.research.google.com/drive/1-bhLeHZsh0km_0TbIK-we_QsitUC-96v?usp=sharing
+
 object pairs dataset: https://drive.google.com/file/d/1kgefvygCmsQDihKxj_PSVV6kaufYMBVI/view?usp=sharing
 
 baseline тетрадка: https://colab.research.google.com/drive/1o0J3MDb7t7iCKxwjIBpW-2czXrSLdW7-?usp=sharing
