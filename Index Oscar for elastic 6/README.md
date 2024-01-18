@@ -7,7 +7,7 @@ pip install -r requirements.txt
 
 2. nohup python index_document.py &
     * nohup if you want to launch in background mode for example on server
-    * --overwrite - bool() so don' write flag if you don't want to overwrite existing indices
+    * --overwrite - bool() so don't write the flag if you don't want to overwrite existing indices
       * --data_folder_path - Folder where you store data that needs to be indexed
         * in RuCam's case it's Oscar dataset folder:
           * it consists of 1000 gzip jsonline files
