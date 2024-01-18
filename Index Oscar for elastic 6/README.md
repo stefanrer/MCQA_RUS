@@ -68,8 +68,8 @@ pip install -r requirements.txt
 ###  Sentences Extraction (es_wrapper.py)
 * settings in wrapper_settings.json file
 #### text_cleaner.py
-* remove html, 
-* normalize spaces and newlines,
+* remove html
+* normalize spaces and newlines
 * add space between punc and next word
 * convert quotes
 * clean other things
