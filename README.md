@@ -1,7 +1,7 @@
 # MCQA_RUS Multilingual Comparative Question Answering for Russian Language
 
 ## RuCam used "Index Oscar for elastic 6" folder scripts for indexing Oscar dataset to elasticsearch engine 6
-
+## You can find the RuCam Demo here: https://rucam.ltdemos.informatik.uni-hamburg.de
 ## Other:
 
 RuCam example: https://colab.research.google.com/drive/1EnF6iHisPIYnCRzPKtLC4kpoUvkKJD7-?usp=sharing
