@@ -85,4 +85,4 @@ pip install -r requirements.txt
     sentences: list
     tags: list
     link: str
-Later use in in index_document.py
+Later used in the index_document.py script
