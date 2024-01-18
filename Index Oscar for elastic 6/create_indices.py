@@ -1,6 +1,6 @@
 import os
 import json
-from delete_indeces import delete_indeces
+from delete_indices import delete_indices
 from elasticsearch import Elasticsearch
 from elasticsearch.client import IndicesClient
 
@@ -15,7 +15,8 @@ def generate_docs_mapping() -> dict:
                 "properties": {
                     "n_sents": {"type": "integer"},
                     "tags": {"type": "text"},
-                    "link": {"type": "text"}
+                    "link": {"type": "text"},
+                    "sents_ids": {"type": "integer"}
                 }
             }
         },
@@ -56,13 +57,13 @@ def generate_sentences_mapping() -> dict:
     return mapping
 
 
-def create_indices():
-    es = Elasticsearch()
+def create_indices(elastic_creds: str = "user:pass", elastic_url: str = "localhost:9200", docs_index_name: str = "test.docs", sentences_index_name: str = "test.sentences"):
+    es = Elasticsearch([f"http://{elastic_creds}@{elastic_url}"], timeout=100, max_retries=100, retry_on_timeout=True)
     es.ping()
-    delete_indeces()
-    es.indices.create(index='oscar.docs', body=generate_docs_mapping())
-    es.indices.create(index='oscar.sentences', body=generate_sentences_mapping())
+    delete_indices(elastic_creds, elastic_url, docs_index_name, sentences_index_name)
+    es.indices.create(index=docs_index_name, body=generate_docs_mapping())
+    es.indices.create(index=sentences_index_name, body=generate_sentences_mapping())
 
 
 if __name__ == "__main__":
-    create_indices()
+    create_indices(elastic_creds="user:pass", elastic_url="localhost:9200", docs_index_name="test.docs", sentences_index_name="test.sentences")
